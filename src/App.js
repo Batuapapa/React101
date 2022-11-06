@@ -4,9 +4,8 @@ import {Title} from "./components/Title";
 function App() {
   return (
     <div className="App">
-     <Title title='hello js'></Title>
-     <Title title='hello react'></Title>
-
+     <Title propsTitle='hello js'></Title>
+     <Title propsTitle='hello react'></Title>
     </div>
   );
 }
