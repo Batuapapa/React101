@@ -1,23 +1,13 @@
-// import Header from './components/Header';
-import React from 'react';
-import Login from './components/Login';
 
-const isLoggedIn = false;
-// const isLoggedIn = false;
-const fullname = "Baturalp Alper HEPER";
+import React from 'react';
+import User from "./components/User";
 function App() {
   return (
-  <div className='test'>{
-     /* <div className="test">{isLoggedIn && <div>Hoşgeldin {fullname}</div>} 
-                        {!isLoggedIn && <a href='#'>Giriş yapın</a>}
-      </div> */}  
-    {
-      // isLoggedIn ? "Hoşgeldin " + fullname : "Giriş yapın"
-      // isLoggedIn ? "Hoşgeldin " + fullname : <a href="#">Giriş Yapın</a>
-      // isLoggedIn ? <div>Hoşgeldin {fullname}</div> : <a href="#">Giriş Yapın</a>
-      //  isLoggedIn ? <div>Hoşgeldin {fullname}</div> : null }
-      //  isLoggedIn ? <div>Hoşgeldin {fullname}</div> : <Header/>}
-       isLoggedIn ? <div>Hoşgeldin {fullname}</div> : <Login/>}
+  <div> 
+    <User name="Baturalp Alper HEPER" city={"Bursa"} age={24}/>
+    <User name="Murat BOZ" city={"Bursa"} age={32}/>
+    <User name="Zeynep BASTIK" city={"Bursa"} age={27}/>
+
   </div>
   );
 }  
