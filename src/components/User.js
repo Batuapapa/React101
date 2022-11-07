@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function User({data, friends}) {
+function User({ title, data, friends}) {
   return (
     <div>
-      Kişi
+      <strong>{title}</strong>
       <div>İsim : {data.name} </div>
       <div>Yaş : {data.age} </div>
       <div>Şehir :  {data.city} </div>   
@@ -16,8 +16,8 @@ function User({data, friends}) {
     </div>
   );
 }
-
 User.propTypes = {
+    title: PropTypes.string,
   data: PropTypes.exact({
     name: PropTypes.string,
     age: PropTypes.number,
@@ -25,4 +25,7 @@ User.propTypes = {
 }),
   friends: PropTypes.array,
 };
+User.defaultProps = {
+  title:"Kişi",
+}
 export default User;

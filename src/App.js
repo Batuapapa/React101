@@ -7,7 +7,7 @@ function App() {
       // name= "Baturalp Alper HEPER"
       // city= "Bursa"
       // age=  {24}
-      
+      title ="Kişi"
       data={{
         name: "Baturalp Alper HEPER",
         city: "Bursa",
